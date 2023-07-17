@@ -1,0 +1,142 @@
+.title1, .body1 {
+    border: 2px solid rgb(127, 194, 239);
+}
+.title2, .body2 {
+    border: 2px solid rgb(214, 133, 176);
+}
+.title3, .body3 {
+    border: 2px solid rgb(219, 225, 89);
+}
+.title4, .body4 {
+    border: 2px solid rgb(127, 194, 239);
+}
+.title5, .body5 {
+    border: 2px solid rgb(214, 133, 176);
+}
+.title6, .body6 {
+    border: 2px solid rgb(219, 225, 89);
+}
+.title7, .body7 {
+    border: 2px solid rgb(127, 194, 239);
+}
+.title8, .body8 {
+    border: 2px solid rgb(214, 133, 176);
+}
+.title9, .body9 {
+    border: 2px solid rgb(219, 225, 89);
+}
+.title10, .body10 {
+    border: 2px solid rgb(127, 194, 239);
+}
+.tab-title {
+    border-bottom: none;
+    padding: .3em .5em;
+    border-radius: .3em .3em 0 0;
+    text-align: center;
+    display: table; 
+}
+.tab-body > div {
+    width: 200%;
+    height: 400px;
+    border-radius: 0 .3em .3em .3em;
+    padding: 1em;
+}
+
+/* radio non-display */
+.container .radio {
+    display: none;
+}
+/* tabs position */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.container::after {
+    content: "";
+    width: 100%;
+}
+.container .tab-title {
+    position: relative;
+    border-bottom: 2px solid transparent;
+    top: 2px;
+    left: 2px;
+}
+.container .tab-title:hover {
+    cursor: pointer;
+}
+.container .tab-body {
+    order: 1;
+}
+/* tab's body init */
+.add-control .tab-body > div {
+    display: none;
+}
+
+/* selected tab's color change */
+.add-control .radio:checked + .tab-title {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+.add-control #tab1:checked ~ .title1 {
+    background: rgba(127, 194, 239, .5);
+}
+.add-control #tab2:checked ~ .title2 {
+    background: rgba(214, 133, 176, .5);
+}
+.add-control #tab3:checked ~ .title3 {
+    background: rgba(219, 225, 89, .5);
+}
+.add-control #tab4:checked ~ .title4 {
+    background: rgba(127, 194, 239, .5);
+}
+.add-control #tab5:checked ~ .title5 {
+    background: rgba(214, 133, 176, .5);
+}
+.add-control #tab6:checked ~ .title6 {
+    background: rgba(219, 225, 89, .5);
+}
+.add-control #tab7:checked ~ .title7 {
+    background: rgba(127, 194, 239, .5);
+}
+.add-control #tab8:checked ~ .title8 {
+    background: rgba(214, 133, 176, .5);
+}
+.add-control #tab9:checked ~ .title9 {
+    background: rgba(219, 225, 89, .5);
+}
+.add-control #tab10:checked ~ .title10 {
+    background: rgba(127, 194, 239, .5);
+}
+
+/* tabs control */
+.add-control #tab1:checked ~ .tab-body > .body1 {
+    display: block;
+}
+.add-control #tab2:checked ~ .tab-body > .body2 {
+    display: block;
+}
+.add-control #tab3:checked ~ .tab-body > .body3 {
+    display: block;
+}
+.add-control #tab4:checked ~ .tab-body > .body4 {
+    display: block;
+}
+.add-control #tab5:checked ~ .tab-body > .body5 {
+    display: block;
+}
+.add-control #tab6:checked ~ .tab-body > .body6 {
+    display: block;
+}
+.add-control #tab7:checked ~ .tab-body > .body7 {
+    display: block;
+}
+.add-control #tab8:checked ~ .tab-body > .body8 {
+    display: block;
+}
+.add-control #tab9:checked ~ .tab-body > .body9 {
+    display: block;
+}
+.add-control #tab10:checked ~ .tab-body > .body10 {
+    display: block;
+}

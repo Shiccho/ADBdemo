@@ -6,12 +6,21 @@ repositories {
     mavenCentral()
 }
 
-mainClassName = "sample.ElectronicMoneyMain"
+mainClassName = "sample.MaaSMain"
+//mainClassName = "sample.PreExec"
 
 dependencies {
-    implementation 'com.scalar-labs:scalardb:3.9.1'
+    implementation 'com.scalar-labs:scalardb:3.9.0'
     implementation 'org.slf4j:slf4j-simple:1.7.30'
+    implementation 'io.javalin:javalin:5.6.1'
+    implementation 'io.javalin:javalin-bundle:5.6.1'
 }
 
 sourceCompatibility = 1.8 
 targetCompatibility = 1.8 
+
+task printCurrentDirectory {
+  doLast {
+    println new File(".").absolutePath
+  }
+}

@@ -1,0 +1,93 @@
+{
+    "trafficroot.trains": {
+      "trainsaction":true,
+      "partition-key":[
+        "id"
+      ],
+      "clustering-key":[],
+      "columns":{
+        "id": "INT",
+        "depature": "TEXT",
+        "destination": "TEXT",
+        "required-time": "INT",
+        "fee":"INT",
+        "vacant-seat": "INT"
+      },
+      "secondary-index":[
+        "depature"
+      ]
+    },
+    "trafficroot.buses": {
+      "trainsaction":true,
+      "partition-key":[
+        "id"
+      ],
+      "clustering-key": [],
+      "columns":{
+        "id": "INT",
+        "depature": "TEXT",
+        "destination": "TEXT",
+        "required-time": "INT",
+        "fee":"INT",
+        "vacant-seat": "INT"
+      },
+      "secondary-index":[
+        "depature"
+      ]
+    },
+    "trafficroot.planes": {
+      "trainsaction":true,
+      "partition-key":[
+        "id"
+      ],
+      "clustering-key": [],
+      "columns":{
+        "id": "INT",
+        "depature": "TEXT",
+        "destination": "TEXT",
+        "required-time": "INT",
+        "fee":"INT",
+        "vacant-seat": "INT"
+      },
+      "secondary-index":[
+        "depature"
+      ]
+    },
+    "user.users": {
+      "trainsaction":true,
+      "partition-key":[
+        "user-id"
+      ],
+      "columns":{
+        "user-id": "TEXT",
+        "password" : "TEXT"
+      }
+    },
+    "reservedinfo.reservedinfos": {
+      "trainsaction":true,
+      "partition-key":[
+        "reserved-id"
+      ],
+      "clustering-key": [],
+      "columns":{
+        "reserved-id": "TEXT",
+        "user-id": "TEXT",
+        "date" : "TEXT",
+        "depature" : "TEXT",
+        "destination" : "TEXT" 
+      }
+    },
+    "pay.pays": {
+      "trainsaction":true,
+      "partition-key":[
+        "credit-id"
+      ],
+      "clustering-key": [],
+      "columns":{
+        "credit-id": "TEXT",
+        "user-id": "TEXT",
+        "credit-password" : "TEXT",
+        "card-number" : "TEXT"
+      }
+    }
+}
