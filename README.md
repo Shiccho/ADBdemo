@@ -10,7 +10,8 @@ Change current directory to getting-started.
 $ cd docs/getting-started
 ```
 
-Please modify "scalardb.propaties" depending on your own environment and put the schema-loader.
+Please modify "scalardb.propaties" depending on your own environment.
+Get and put the schema-loader.
 
 
 ## Run
