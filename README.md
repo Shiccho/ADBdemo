@@ -11,7 +11,11 @@ $ cd docs/getting-started
 ```
 
 Please modify "scalardb.propaties" depending on your own environment.
-Get and put the schema-loader.
+
+Please get schema-loader from scalardb web site, and put it at
+```Bash
+ADBdemo/docs/getting-started/
+```
 
 
 ## Run
@@ -45,4 +49,4 @@ http://localhost:7070/
 Please use web application by following instruction on presentation slide.
 
 ## Note
-I think there is a bug caused by the route search algorithm, what makes the program enter an infinite loop, if there is a cycle in the route.
+I guess there is a bug caused by the route search algorithm, what makes the program enter an infinite loop, if there is a cycle in the route.
